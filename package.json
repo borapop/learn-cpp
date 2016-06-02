@@ -1,0 +1,19 @@
+{
+  "name": "learn-cpp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "co-body": "^4.2.0",
+    "co-views": "^2.1.0",
+    "jade": "^1.11.0",
+    "koa-static-folder": "^0.1.6",
+    "koa": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "author": "borapop",
+  "license": "ISC"
+}

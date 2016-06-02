@@ -1,0 +1,23 @@
+extends layout
+block content
+  main
+    ul(class="flex-container")
+      li(class="help-container")
+        div(id="help" class="help")
+          h1 #{name}
+          !{help}
+        hidden(class="done" id="done") Выполнено! <br>
+          a(href="/#{next}") Перейти к следующему заданию
+        div(class="task" id="task") #{result}
+      li(class="editor-container")
+      
+        div(id="editor" class="editor") #{code}
+        div(id="output-container" class="output-container")  
+          div(id="output" class="output") 
+          div(id="panel" class="panel")
+            button(class="run" onclick="compile()") Run
+          
+    
+    script(src="/public/javascripts/src-min/ace.js", type="text/javascript", charset="utf-8")
+    script(src="/public/javascripts/src-min/mode-c_cpp.js", type="text/javascript", charset="utf-8")
+    script(src="/public/javascripts/app.js", type="text/javascript", charset="utf-8")
